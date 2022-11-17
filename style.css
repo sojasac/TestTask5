@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.firstWork, .secondWork, .thirdWork, .fourthWork, .fifthWork, .sixthWork, .seventhWork, .eighthWork{
+  display: flex;
+  justify-content: space-between;
+  background: blue;
+  margin: 0 0 30px 0;
+}
+.firstWork__items, .secondWork__items, .thirdWork__items, .fourthWork__items, .fifthWork__items, .sixthWork__items, .seventhWork__items, .eighthWork__items{
+  padding: 15px 10px;
+  color: white;
+  cursor: pointer;
+}
+.firstWork__items:hover, .secondWork__items:hover, .thirdWork__items:hover, .fourthWork__items:hover, .fifthWork__items:hover, .sixthWork__items:hover, .seventhWork__items:hover, .eighthWork__items:hover{
+  background: #fff;
+  color: blue;
+}
+.secondWork{
+  flex-direction: row-reverse;
+}
+.thirdWork, .fourthWork{
+  justify-content: center;
+}
+.thirdWork__items{
+  text-align: center;
+  border: 1px solid red;
+}
+.thirdWork__items:nth-child(3), .fourthWork__items:nth-child(3), .fifthWork__items:nth-child(3), .sixthWork__items:nth-child(3){
+  width: 123px;
+}
+.fourthWork, .fifthWork, .sixthWork{
+  align-items: center;
+}
+.fifthWork{
+  justify-content: flex-end;
+}
+.sixthWork{
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+.seventhWork{
+  flex-wrap: wrap;
+  width: 900px;
+  justify-content: center;
+}
+.eighthWork{
+  width: 900px;
+  flex-direction: column;
+}
+.square{
+  border: 2px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1000px;
+}
+.square__items{
+  width: 150px;
+  height: 150px;
+  border: 2px solid blue;
+  margin: 0 0 10px 0;
+}
